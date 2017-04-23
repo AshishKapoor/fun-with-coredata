@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		896AEB611EACAA6300BB3632 /* Course+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AEB5D1EACAA6300BB3632 /* Course+CoreDataClass.swift */; };
+		896AEB621EACAA6300BB3632 /* Course+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AEB5E1EACAA6300BB3632 /* Course+CoreDataProperties.swift */; };
+		896AEB631EACAA6300BB3632 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AEB5F1EACAA6300BB3632 /* Student+CoreDataClass.swift */; };
+		896AEB641EACAA6300BB3632 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AEB601EACAA6300BB3632 /* Student+CoreDataProperties.swift */; };
+		896AEB661EACAED500BB3632 /* FWCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AEB651EACAED500BB3632 /* FWCConstants.swift */; };
 		89FCDC481EACA494004F32A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FCDC471EACA494004F32A7 /* AppDelegate.swift */; };
-		89FCDC4A1EACA494004F32A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FCDC491EACA494004F32A7 /* ViewController.swift */; };
+		89FCDC4A1EACA494004F32A7 /* FWCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FCDC491EACA494004F32A7 /* FWCViewController.swift */; };
 		89FCDC4D1EACA494004F32A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89FCDC4B1EACA494004F32A7 /* Main.storyboard */; };
 		89FCDC501EACA494004F32A7 /* fun_with_coredata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89FCDC4E1EACA494004F32A7 /* fun_with_coredata.xcdatamodeld */; };
 		89FCDC521EACA494004F32A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89FCDC511EACA494004F32A7 /* Assets.xcassets */; };
 		89FCDC551EACA494004F32A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89FCDC531EACA494004F32A7 /* LaunchScreen.storyboard */; };
 		89FCDC601EACA494004F32A7 /* fun_with_coredataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FCDC5F1EACA494004F32A7 /* fun_with_coredataTests.swift */; };
 		89FCDC6B1EACA494004F32A7 /* fun_with_coredataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FCDC6A1EACA494004F32A7 /* fun_with_coredataUITests.swift */; };
+		89FCDC791EACA5AF004F32A7 /* FWCDatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FCDC781EACA5AF004F32A7 /* FWCDatabaseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		896AEB5D1EACAA6300BB3632 /* Course+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Course+CoreDataClass.swift"; sourceTree = "<group>"; };
+		896AEB5E1EACAA6300BB3632 /* Course+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Course+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		896AEB5F1EACAA6300BB3632 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		896AEB601EACAA6300BB3632 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		896AEB651EACAED500BB3632 /* FWCConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWCConstants.swift; sourceTree = "<group>"; };
 		89FCDC441EACA494004F32A7 /* fun-with-coredata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fun-with-coredata.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FCDC471EACA494004F32A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89FCDC491EACA494004F32A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89FCDC491EACA494004F32A7 /* FWCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FWCViewController.swift; sourceTree = "<group>"; };
 		89FCDC4C1EACA494004F32A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89FCDC4F1EACA494004F32A7 /* fun_with_coredata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fun_with_coredata.xcdatamodel; sourceTree = "<group>"; };
 		89FCDC511EACA494004F32A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		89FCDC661EACA494004F32A7 /* fun-with-coredataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fun-with-coredataUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FCDC6A1EACA494004F32A7 /* fun_with_coredataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fun_with_coredataUITests.swift; sourceTree = "<group>"; };
 		89FCDC6C1EACA494004F32A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89FCDC781EACA5AF004F32A7 /* FWCDatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWCDatabaseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +111,13 @@
 		89FCDC461EACA494004F32A7 /* fun-with-coredata */ = {
 			isa = PBXGroup;
 			children = (
-				89FCDC471EACA494004F32A7 /* AppDelegate.swift */,
-				89FCDC491EACA494004F32A7 /* ViewController.swift */,
-				89FCDC4B1EACA494004F32A7 /* Main.storyboard */,
-				89FCDC511EACA494004F32A7 /* Assets.xcassets */,
-				89FCDC531EACA494004F32A7 /* LaunchScreen.storyboard */,
 				89FCDC561EACA494004F32A7 /* Info.plist */,
+				89FCDC471EACA494004F32A7 /* AppDelegate.swift */,
+				896AEB651EACAED500BB3632 /* FWCConstants.swift */,
+				89FCDC841EACA810004F32A7 /* Resources */,
+				89FCDC851EACA828004F32A7 /* View */,
+				89FCDC831EACA7EE004F32A7 /* Controller */,
+				89FCDC821EACA7D8004F32A7 /* Model */,
 				89FCDC4E1EACA494004F32A7 /* fun_with_coredata.xcdatamodeld */,
 			);
 			path = "fun-with-coredata";
@@ -126,6 +139,44 @@
 				89FCDC6C1EACA494004F32A7 /* Info.plist */,
 			);
 			path = "fun-with-coredataUITests";
+			sourceTree = "<group>";
+		};
+		89FCDC821EACA7D8004F32A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				896AEB5D1EACAA6300BB3632 /* Course+CoreDataClass.swift */,
+				896AEB5E1EACAA6300BB3632 /* Course+CoreDataProperties.swift */,
+				896AEB5F1EACAA6300BB3632 /* Student+CoreDataClass.swift */,
+				896AEB601EACAA6300BB3632 /* Student+CoreDataProperties.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		89FCDC831EACA7EE004F32A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89FCDC491EACA494004F32A7 /* FWCViewController.swift */,
+				89FCDC781EACA5AF004F32A7 /* FWCDatabaseController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		89FCDC841EACA810004F32A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89FCDC511EACA494004F32A7 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		89FCDC851EACA828004F32A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89FCDC531EACA494004F32A7 /* LaunchScreen.storyboard */,
+				89FCDC4B1EACA494004F32A7 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				896AEB611EACAA6300BB3632 /* Course+CoreDataClass.swift in Sources */,
+				896AEB661EACAED500BB3632 /* FWCConstants.swift in Sources */,
 				89FCDC501EACA494004F32A7 /* fun_with_coredata.xcdatamodeld in Sources */,
-				89FCDC4A1EACA494004F32A7 /* ViewController.swift in Sources */,
+				896AEB641EACAA6300BB3632 /* Student+CoreDataProperties.swift in Sources */,
+				89FCDC4A1EACA494004F32A7 /* FWCViewController.swift in Sources */,
+				896AEB631EACAA6300BB3632 /* Student+CoreDataClass.swift in Sources */,
 				89FCDC481EACA494004F32A7 /* AppDelegate.swift in Sources */,
+				896AEB621EACAA6300BB3632 /* Course+CoreDataProperties.swift in Sources */,
+				89FCDC791EACA5AF004F32A7 /* FWCDatabaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +577,7 @@
 				89FCDC711EACA494004F32A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89FCDC721EACA494004F32A7 /* Build configuration list for PBXNativeTarget "fun-with-coredataTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +586,7 @@
 				89FCDC741EACA494004F32A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89FCDC751EACA494004F32A7 /* Build configuration list for PBXNativeTarget "fun-with-coredataUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +595,7 @@
 				89FCDC771EACA494004F32A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
