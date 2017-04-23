@@ -10,4 +10,4 @@ import Foundation
 import CoreData
 
 let kStudentClassName:String    = String(describing: Student.self)
-let kCourseClassName:String     = String(describing: Student.self)
+let kCourseClassName:String     = String(describing: Course.self)

@@ -20,8 +20,6 @@ class FWCDatabaseController {
         return FWCDatabaseController.persistentContainer.viewContext
     }
     
-    
-    
     static var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
