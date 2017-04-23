@@ -11,6 +11,10 @@ import CoreData
 
 class FWCViewController: UIViewController {
 
+    @IBOutlet weak var displayLabel: UILabel!
+    @IBOutlet weak var recordsCountLabel: UILabel!
+    @IBOutlet weak var courseName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,14 +33,27 @@ class FWCViewController: UIViewController {
         FWCDatabaseController.saveContext()
         
         // Fetch
-        let fetchRequest:NSFetchRequest<Student> = Student.fetchRequest()
+        let fetchRequestForStudents:NSFetchRequest<Student> = Student.fetchRequest()
+        let fetchRequestForCourses:NSFetchRequest<Course> = Course.fetchRequest()
         
         do {
-            let searchResults = try FWCDatabaseController.getContext().fetch(fetchRequest)
-            print(searchResults.count)
-            for result in searchResults as [Student] {
-                print("\(result.firstName!) \(result.lastName!) is \(result.age) years old.")
+            let searchResultsForStudents = try FWCDatabaseController.getContext().fetch(fetchRequestForStudents)
+            
+            let searchResultsForCourses = try FWCDatabaseController.getContext().fetch(fetchRequestForCourses)
+            
+            let totalRecords = searchResultsForStudents.count
+            recordsCountLabel.text = String(describing:totalRecords)
+            
+            for studentResult in searchResultsForStudents as [Student] {
+                let infoFetched = "\(studentResult.firstName!) \(studentResult.lastName!) is \(studentResult.age) years old."
+                displayLabel.text = infoFetched
             }
+            
+            for courseResult in searchResultsForCourses as [Course] {
+                let infoFetched = "\(courseResult.courseName!)"
+                courseName.text = infoFetched
+            }
+            
         } catch {
             print("error: \(error)")
         }
